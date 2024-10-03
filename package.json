@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "storybook": "ng run ui-kit:storybook",
+    "build-storybook": "ng run ui-kit:build-storybook"
   },
   "private": true,
   "dependencies": {
@@ -23,8 +25,19 @@
     "zone.js": "~0.14.10"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^18.2.7",
     "@angular/cli": "^18.2.7",
     "@angular/compiler-cli": "^18.2.0",
+    "@chromatic-com/storybook": "^1.9.0",
+    "@compodoc/compodoc": "^1.1.25",
+    "@storybook/addon-docs": "^8.3.4",
+    "@storybook/addon-essentials": "^8.3.4",
+    "@storybook/addon-interactions": "^8.3.4",
+    "@storybook/addon-links": "^8.3.4",
+    "@storybook/addon-onboarding": "^8.3.4",
+    "@storybook/angular": "^8.3.4",
+    "@storybook/blocks": "^8.3.4",
+    "@storybook/test": "^8.3.4",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.2.0",
     "karma": "~6.4.0",
@@ -32,6 +45,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^18.2.0",
+    "storybook": "^8.3.4",
     "typescript": "~5.5.2"
   }
 }
