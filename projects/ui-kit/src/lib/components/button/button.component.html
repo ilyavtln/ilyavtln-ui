@@ -1,3 +1,7 @@
 <button [ngClass]="buttonClass">
-  {{ label }}
+  @if (label) {
+    {{ label }}
+  } @else {
+    <ng-content></ng-content>
+  }
 </button>

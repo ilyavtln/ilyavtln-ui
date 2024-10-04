@@ -9,7 +9,7 @@ import { NgClass } from '@angular/common';
   styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent {
-  @Input() label: string = 'Click me';
+  @Input() label?: string;
   @Input() type: 'primary' | 'secondary' = 'primary';
   @Input() size: 'small' | 'medium' | 'large' = 'medium';
 
