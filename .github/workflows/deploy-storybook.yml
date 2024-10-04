@@ -1,0 +1,37 @@
+name: Deploy Storybook to GitHub Pages
+
+# Определяем, когда будет запускаться action: при пуше в ветку master/main
+on:
+  push:
+    branches:
+      - master  # Или замените на main, если у вас основная ветка называется main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Шаг 1: Клонирование репозитория
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Шаг 2: Установка Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      # Шаг 3: Установка зависимостей
+      - name: Install dependencies
+        run: npm install
+
+      # Шаг 4: Сборка Storybook
+      - name: Build Storybook
+        run: npm run build-storybook
+
+      # Шаг 5: Деплой на GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./storybook-static
