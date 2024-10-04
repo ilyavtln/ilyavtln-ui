@@ -1,10 +1,9 @@
 name: Deploy Storybook to GitHub Pages
 
-# Определяем, когда будет запускаться action: при пуше в ветку master/main
 on:
   push:
     branches:
-      - master  # Или замените на main, если у вас основная ветка называется main
+      - master
 
 jobs:
   build-and-deploy:
@@ -28,6 +27,12 @@ jobs:
       # Шаг 4: Сборка Storybook
       - name: Build Storybook
         run: npm run build-storybook
+
+      # Шаг 5: Конфигурация гита
+      - name: Configure git
+        run: |
+          git config --global user.email "owtf086@gmail.com"
+          git config --global user.name "ilyavtln"
 
       # Шаг 5: Деплой Storybook
       - name: Deploy Storybook
