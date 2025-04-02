@@ -23,8 +23,10 @@
       "ES2022",
       "dom"
     ],
+    "baseUrl": "./",
     "paths": {
-      "ui-kit": [ "./dist/ui-kit" ],
+      "ui-kit": [ "dist/ui-kit" ],
+      "@ui-kit": ["projects/ui-kit/src/public-api.ts"]
     }
   },
   "angularCompilerOptions": {
