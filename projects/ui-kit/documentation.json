@@ -18,7 +18,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  render: (args) => ({\r\n    props: args,\r\n  }),\r\n  args: {\r\n    title: 'Default Chip', // Замените на ваши свойства\r\n    size: 'medium', // Добавьте размер, если есть\r\n  },\r\n}"
+                "defaultValue": "{\n  render: (args) => ({\n    props: args,\n  }),\n  args: {\n    title: 'Default Chip', // Замените на ваши свойства\n    size: 'medium', // Добавьте размер, если есть\n  },\n}"
             },
             {
                 "name": "meta",
@@ -28,7 +28,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ButtonComponent>",
-                "defaultValue": "{\r\n  title: 'UI/Components/Button',\r\n  component: ButtonComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {\r\n    type: {\r\n      control: 'select',\r\n      options: ['primary', 'secondary'],\r\n    },\r\n    label: {\r\n      control: 'text',\r\n    },\r\n    size: {\r\n      control: 'select',\r\n      options: ['small', 'medium', 'large'],\r\n    },\r\n  },\r\n}"
+                "defaultValue": "{\n  title: 'UI/Components/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['primary', 'secondary'],\n    },\n    label: {\n      control: 'text',\n    },\n    size: {\n      control: 'select',\n      options: ['small', 'medium', 'large'],\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -38,7 +38,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ChipComponent>",
-                "defaultValue": "{\r\n  title: 'UI/Components/Chip', // Заголовок компонента в Storybook\r\n  component: ChipComponent,\r\n}"
+                "defaultValue": "{\n  title: 'UI/Components/Chip', // Заголовок компонента в Storybook\n  component: ChipComponent,\n  tags: ['autodocs'],\n}"
             },
             {
                 "name": "preview",
@@ -58,7 +58,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    type: 'primary',\r\n    label: 'Primary Button',\r\n    size: 'medium',\r\n  },\r\n}"
+                "defaultValue": "{\n  args: {\n    type: 'primary',\n    label: 'Primary Button',\n    size: 'medium',\n  },\n}"
             },
             {
                 "name": "Removable",
@@ -68,7 +68,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  render: (args) => ({\r\n    props: args,\r\n  }),\r\n  args: {\r\n    title: 'Removable Chip', // Заголовок для удаляемого чипа\r\n    size: 'small', // Размер для удаляемого чипа\r\n  },\r\n}"
+                "defaultValue": "{\n  render: (args) => ({\n    props: args,\n  }),\n  args: {\n    title: 'Removable Chip', // Заголовок для удаляемого чипа\n    size: 'small', // Размер для удаляемого чипа\n  },\n}"
             },
             {
                 "name": "Secondary",
@@ -78,7 +78,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    type: 'secondary',\r\n    label: 'Secondary Button',\r\n    size: 'medium',\r\n  },\r\n}"
+                "defaultValue": "{\n  args: {\n    type: 'secondary',\n    label: 'Secondary Button',\n    size: 'medium',\n  },\n}"
             },
             {
                 "name": "WithCustomTitle",
@@ -88,7 +88,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  render: (args) => ({\r\n    props: args,\r\n  }),\r\n  args: {\r\n    title: 'Custom Chip Title', // Пользовательский заголовок для этой истории\r\n    size: 'large', // Настройки размера\r\n  },\r\n}"
+                "defaultValue": "{\n  render: (args) => ({\n    props: args,\n  }),\n  args: {\n    title: 'Custom Chip Title', // Пользовательский заголовок для этой истории\n    size: 'large', // Настройки размера\n  },\n}"
             }
         ],
         "functions": [],
@@ -127,7 +127,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  render: (args) => ({\r\n    props: args,\r\n  }),\r\n  args: {\r\n    title: 'Default Chip', // Замените на ваши свойства\r\n    size: 'medium', // Добавьте размер, если есть\r\n  },\r\n}"
+                    "defaultValue": "{\n  render: (args) => ({\n    props: args,\n  }),\n  args: {\n    title: 'Default Chip', // Замените на ваши свойства\n    size: 'medium', // Добавьте размер, если есть\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -137,7 +137,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ChipComponent>",
-                    "defaultValue": "{\r\n  title: 'UI/Components/Chip', // Заголовок компонента в Storybook\r\n  component: ChipComponent,\r\n}"
+                    "defaultValue": "{\n  title: 'UI/Components/Chip', // Заголовок компонента в Storybook\n  component: ChipComponent,\n  tags: ['autodocs'],\n}"
                 },
                 {
                     "name": "Removable",
@@ -147,7 +147,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  render: (args) => ({\r\n    props: args,\r\n  }),\r\n  args: {\r\n    title: 'Removable Chip', // Заголовок для удаляемого чипа\r\n    size: 'small', // Размер для удаляемого чипа\r\n  },\r\n}"
+                    "defaultValue": "{\n  render: (args) => ({\n    props: args,\n  }),\n  args: {\n    title: 'Removable Chip', // Заголовок для удаляемого чипа\n    size: 'small', // Размер для удаляемого чипа\n  },\n}"
                 },
                 {
                     "name": "WithCustomTitle",
@@ -157,7 +157,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  render: (args) => ({\r\n    props: args,\r\n  }),\r\n  args: {\r\n    title: 'Custom Chip Title', // Пользовательский заголовок для этой истории\r\n    size: 'large', // Настройки размера\r\n  },\r\n}"
+                    "defaultValue": "{\n  render: (args) => ({\n    props: args,\n  }),\n  args: {\n    title: 'Custom Chip Title', // Пользовательский заголовок для этой истории\n    size: 'large', // Настройки размера\n  },\n}"
                 }
             ],
             "projects/ui-kit/src/lib/components/button/button.stories.ts": [
@@ -169,7 +169,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ButtonComponent>",
-                    "defaultValue": "{\r\n  title: 'UI/Components/Button',\r\n  component: ButtonComponent,\r\n  tags: ['autodocs'],\r\n  argTypes: {\r\n    type: {\r\n      control: 'select',\r\n      options: ['primary', 'secondary'],\r\n    },\r\n    label: {\r\n      control: 'text',\r\n    },\r\n    size: {\r\n      control: 'select',\r\n      options: ['small', 'medium', 'large'],\r\n    },\r\n  },\r\n}"
+                    "defaultValue": "{\n  title: 'UI/Components/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['primary', 'secondary'],\n    },\n    label: {\n      control: 'text',\n    },\n    size: {\n      control: 'select',\n      options: ['small', 'medium', 'large'],\n    },\n  },\n}"
                 },
                 {
                     "name": "Primary",
@@ -179,7 +179,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    type: 'primary',\r\n    label: 'Primary Button',\r\n    size: 'medium',\r\n  },\r\n}"
+                    "defaultValue": "{\n  args: {\n    type: 'primary',\n    label: 'Primary Button',\n    size: 'medium',\n  },\n}"
                 },
                 {
                     "name": "Secondary",
@@ -189,7 +189,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    type: 'secondary',\r\n    label: 'Secondary Button',\r\n    size: 'medium',\r\n  },\r\n}"
+                    "defaultValue": "{\n  args: {\n    type: 'secondary',\n    label: 'Secondary Button',\n    size: 'medium',\n  },\n}"
                 }
             ],
             "projects/ui-kit/.storybook/preview.ts": [
@@ -282,6 +282,16 @@
                 "status": "low"
             },
             {
+                "filePath": "projects/ui-kit/src/lib/components/button/button.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "projects/ui-kit/src/lib/components/chip/chip.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -317,6 +327,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "WithCustomTitle",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/lib/components/chip/chip.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
