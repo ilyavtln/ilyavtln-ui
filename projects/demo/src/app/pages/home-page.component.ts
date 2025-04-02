@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { ButtonComponent, ChipComponent } from '@ui-kit';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [ButtonComponent, ChipComponent],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
