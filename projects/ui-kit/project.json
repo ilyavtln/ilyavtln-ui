@@ -1,0 +1,57 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "ui-kit",
+  "projectType": "library",
+  "sourceRoot": "projects/ui-kit/src",
+  "prefix": "ui",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:ng-packagr",
+      "options": {
+        "project": "projects/ui-kit/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "projects/ui-kit/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "projects/ui-kit/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production",
+      "outputs": [
+        "{workspaceRoot}/dist/ui-kit"
+      ]
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "configDir": "projects/ui-kit/.storybook",
+        "browserTarget": "ui-kit:build",
+        "compodoc": true,
+        "compodocArgs": [
+          "-e",
+          "json",
+          "-d",
+          "projects/ui-kit"
+        ],
+        "port": 6006
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "options": {
+        "configDir": "projects/ui-kit/.storybook",
+        "browserTarget": "ui-kit:build",
+        "compodoc": true,
+        "compodocArgs": [
+          "-e",
+          "json",
+          "-d",
+          "projects/ui-kit"
+        ],
+        "outputDir": "storybook-static"
+      }
+    }
+  }
+}

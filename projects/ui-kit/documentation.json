@@ -102,18 +102,18 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 183
+                "kind": 184
             },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<>",
+                "rawtype": "StoryObj<unknown>",
                 "file": "projects/ui-kit/src/lib/components/chip/chip.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 183
+                "kind": 184
             }
         ],
         "enumerations": [],
@@ -218,7 +218,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 183
+                    "kind": 184
                 }
             ],
             "projects/ui-kit/src/lib/components/chip/chip.stories.ts": [
@@ -226,17 +226,21 @@
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<>",
+                    "rawtype": "StoryObj<unknown>",
                     "file": "projects/ui-kit/src/lib/components/chip/chip.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 183
+                    "kind": 184
                 }
             ]
         }
     },
-    "routes": [],
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "children": []
+    },
     "coverage": {
         "count": 0,
         "status": "low",
